@@ -1,0 +1,1 @@
+﻿variavel_modulo = 'Anderson'
