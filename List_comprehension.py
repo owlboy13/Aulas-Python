@@ -26,6 +26,6 @@ print(*produtos_ordenados, sep='\n')
 SINTAXE BÁSICA
 # [expressão for item in teravel if conclucao]
 
-** <- desempacotado de dict, exemplo (**nome_dict)
+** <- desempacotamento de dict, exemplo (**nome_dict)
 '''
 
