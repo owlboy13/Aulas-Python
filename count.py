@@ -2,7 +2,7 @@
 from itertools import count
 
 
-c1 = count(start=8, step=8) # com arguentos para soma
+c1 = count(start=4, step=4) # com arguentos para o proximo numero
 r1 = range(10)
 
 #verificar se o metodo é iterator
