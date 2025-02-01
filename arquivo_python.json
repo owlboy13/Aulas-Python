@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Anderson",
+    "lastname": "Luiz",
+    "age": 30,
+    "ativo": false,
+    "notas": [
+      "A",
+      "A+"
+    ],
+    "Phone": {
+      "residencial": "00 0000-0000",
+      "celular": "00 0000-0000"
+    },
+    "address": [
+      {
+        "Street": "Rua Francisco leao Veloso"
+      },
+      {
+        "City": "Uirauna"
+      },
+      {
+        "State": "Paraiba"
+      }
+    ]
+  },
+  {
+    "name": "Maria",
+    "lastname": "Vieira",
+    "age": 50,
+    "ativo": false,
+    "notas": [
+      "B",
+      "C+"
+    ],
+    "Phone": {
+      "residencial": "00 0000-0000",
+      "celular": "00 0000-0000"
+    },
+    "address": [
+      {
+        "Street": "Rua xxxxxxxxx"
+      },
+      {
+        "City": "Uirauna"
+      },
+      {
+        "State": "Paraiba"
+      }
+    ]
+  }
+]

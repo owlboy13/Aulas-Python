@@ -1,0 +1,12 @@
+﻿{
+    "name": "Anderson",
+    "lastname": "Luiz",
+    "age": 30,
+    "address": [
+        {"Street": "Rua Francisco leão Veloso"},
+        {"City": "Uiraúna"},
+        {"State": "Paraíba"}
+    ]
+}
+
+
