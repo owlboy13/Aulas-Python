@@ -16,7 +16,7 @@ pessoas = [
         "address": [
             {"Street": "Rua Francisco leao Veloso"},
             {"City": "Uirauna"},
-            {"State": "Paraiba"}
+            {"State": "Paraíba"}
         ]
     },
     {
@@ -31,13 +31,13 @@ pessoas = [
         },
         "address": [
             {"Street": "Rua xxxxxxxxx"},
-            {"City": "Uirauna"},
-            {"State": "Paraiba"}
+            {"City": "Uiraúna"},
+            {"State": "Paraíba"}
         ]
     }
 ]
-'''
-# Obtém o diretório atual onde o script está sendo executado
+
+#Obtém o diretório atual onde o script está sendo executado
 BASE_DIR = os.path.dirname(__file__)
 
 # Define o caminho completo onde o arquivo JSON será salvo
@@ -46,21 +46,19 @@ SAVE_TO = os.path.join(BASE_DIR, 'arquivo_python.json')
 
 # Abre o arquivo no modo de escrita ('w') com codificação UTF-8
 # O bloco 'with' garante que o arquivo será fechado automaticamente após o uso
-with open(SAVE_TO, 'w+', encoding='utf-8') as file:
+with open(SAVE_TO, 'w+') as file:
     # Converte a lista 'pessoas' para o formato JSON e salva no arquivo
     # O parâmetro 'indent=2' formata o JSON com 2 espaços de indentação para melhor legibilidade
-    json.dump(pessoas, file, indent=2)
+    json.dump(pessoas, file, ensure_ascii=False, indent=2)
 
-print(json.dumps(pessoas, indent=2))
 
-'''
 
-BASE_DIR = os.path.dirname(__file__)
-FILE_JSON = os.path.join(BASE_DIR, 'arquivo_python.json')
+# BASE_DIR = os.path.dirname(__file__)
+# FILE_JSON = os.path.join(BASE_DIR, 'arquivo_python.json')
 
-with open(FILE_JSON, 'r+', encoding='utf-8') as file:
-    estrutura = json.load(file)
-    print(json.dumps(estrutura))
+# with open(FILE_JSON, 'r+', encoding='utf-8') as file:
+#     estrutura = json.load(file)
+#     print(json.dumps(estrutura, indent=2))
 
-    for estruturas in estrutura:
-        print(estruturas['name'])
+#     # for estruturas in estrutura:
+#     #     print(estruturas)
