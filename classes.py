@@ -85,7 +85,6 @@ cannon = Camera('Sony')
 cannon.filmar()
 
 # DESCOBRINDO ANO DE NASCIMENTO
-
 class Pessoa:
     ano_atual = 2024
     def __init__(self, nome, idade):
@@ -99,7 +98,12 @@ p1 = Pessoa('Anderson', 31)
 p2 = Pessoa('Hevila', 29)
 print(p1.get_anodenascimento())
 print(p2.get_anodenascimento())
-    
+
+
+class Boneco:
+    def __init__(self, nome):
+        self.nome = nome
+
 
 
 
