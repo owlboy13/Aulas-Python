@@ -98,12 +98,31 @@ p1 = Pessoa('Anderson', 31)
 p2 = Pessoa('Hevila', 29)
 print(p1.get_anodenascimento())
 print(p2.get_anodenascimento())
+print()
 
-
-class Boneco:
+class Personagem:
     def __init__(self, nome):
         self.nome = nome
 
+    def atributos(self, altura, peso, etnia):
+        self.altura = altura
+        self.peso = peso
+        self.etnia = etnia
+        print(f'Personagem: {self.nome}')
+        print(f' Altura: {self.altura}\n Peso: {self.peso}\n Etnia: {self.etnia}')
+
+
+    def comportamento(self, poder_especial, forca, velocidade, defesa):
+        self.poder_especial  = poder_especial
+        self.forca = forca
+        self.velocidade = velocidade
+        self.defesa = defesa
+        print(f'Poder especial: {self.poder_especial}\n Força: {self.forca}\n Velocidade: {self.velocidade}\n Defesa: {self.defesa}')
+
+
+personagem_01 = Personagem('Matsu Ogara')
+personagem_01.atributos(1.70, 75, "Pardo")
+personagem_01.comportamento("Bola de fogo", "Soco forte", "Alta", "Esquiva")
 
 
 
